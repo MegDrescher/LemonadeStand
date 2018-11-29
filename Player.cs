@@ -8,21 +8,24 @@ namespace LemonadeStand
 {
     public class Player
     {
-        public Player player;
-        public string name;
+       
+        private string name;
         public double amountOfMoney = 20;
         public int days = 0;
         public double profit;
-        double expenses;
-        double drinkCost;
+        private double expenses;
+        private double drinkCost;
         public int unpaidCustomers;
         public int numberOfPaidCustomers;
-        int cupsSold;
-        //public list of customer names = new List
+        private int cupsSold;
+        internal object inventory;
+        internal object recipe;
+        //public list of customer names = new List?
 
     }
-    
+
+   
 
 
-    
+
 }

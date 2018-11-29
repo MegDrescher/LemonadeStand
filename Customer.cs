@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Customer
+    public class Customer
     {
-        string name;
-        int cupsPurchased;
-        int cupsLeftover;
+        public string name;
+        private int cupsPurchased;
+        private int cupsLeftover;
         public double customerCash;
         public int thirst;
-        Random random = new Random();
+        private Random random = new Random();
+        int temp;
+        
+
 
     }
-
-   
+    
+       
 
     
 }

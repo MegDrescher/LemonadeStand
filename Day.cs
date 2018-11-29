@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Day
+    internal class Day
     {
         public int dayNumber;
         public double lemondadePrice;
         public double endOfDayTotal;
-        public double people;
-        public int pitcher;
+        public double people;   
+        public int number;
+        public Weather weather;
+        public List<Customer> customers;
+        public Random random;
+        public int customersToday;
+       
+
+
+
+        public object Customers { get; internal set; }
 
 
         internal void StartDay()
@@ -25,6 +34,14 @@ namespace LemonadeStand
             throw new NotImplementedException();
         }
 
-       
+        internal void SetUpDay(int index)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+
     }
+
 }
