@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Inventory : Supply
+    public class Inventory
     {
         //member variables
         public int quantity;
@@ -15,6 +15,10 @@ namespace LemonadeStand
         public List<Supply> lemons;
         public List<Supply> cupsOfSugar;
         public List<Supply> iceCubes;
+
+        public Inventory()
+        {
+        }
 
         //constructor
         public Inventory(int quantity, double price, string typeOfSupply)

@@ -6,17 +6,25 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    internal class Weather
+    public class Weather
     {
         public int currentTemperature;
+        public int predictedTemperature;
+        public int predictedWeather;
+        public string predictedWeatherIndex;
+        public List<string> weatherVariables = new List<string>() { "Sunny and Hot!", "Cloudy and Cold!", "Sunny and Clear Skies!", "Rainy Day" };        
         public string currentWeatherCondition;
         public string weatherCondition;
+        private Random random;
 
-        internal string CurrentWeatherCondition()
+
+        public Weather(decimal minTemperature, decimal maxTemperature, Random random)
         {
-            throw new NotImplementedException();
+            this.random = random;
+            predictedTemperature = random.Next(Decimal.ToInt32(minTemperature), Decimal.ToInt32(maxTemperature + 1));
+            predictedWeather = weatherVariables[predictedWeatherIndex];
         }
-
-       
+            
+        
     } 
 }

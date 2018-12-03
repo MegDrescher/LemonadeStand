@@ -6,22 +6,42 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Player
+    public abstract class Player
     {
        
-        private string name;
-        public double amountOfMoney = 20;
+        public string name;
+       // public double amountOfMoney = 20;
         public int days = 0;
-        public double profit;
+        public Inventory inventory;
+
+        public double startMoneyAmount;
+        public double moneyAvailable;
+        public double dailyProfit;
+        public double dailyExpense;
+        public double totalExpense;
+        public double totalProfit;
+        public Random random;
+        public bool notEnoughLemons;
+        public bool notEnoughSugar;
+        public bool notEnoughIce;
+        public bool notEnoughCups;
+
         private double expenses;
         private double drinkCost;
         public int unpaidCustomers;
         public int numberOfPaidCustomers;
-        private int cupsSold;
-        internal object inventory;
-        internal object recipe;
-        //public list of customer names = new List?
-
+       
+       
+        public Player()
+        {
+            inventory = new Inventory();
+            startMoneyAmount = 20;
+            moneyAvailable = startMoneyAmount;
+            notEnoughCups = true;
+            notEnoughLemons = true;
+            notEnoughSugar = true;
+            notEnoughIce = true;
+        }
     }
 
    

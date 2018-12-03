@@ -25,7 +25,7 @@ namespace LemonadeStand
 
         }
 
-        void SetSupplyPrice(List<int> bundleQuantities, List<Inventory> supplyBundleList, int minSupplyPrice, int maxSupplyPrice, int typeIndex)
+        public void SetSupplyPrice(List<int> bundleQuantities, List<Inventory> supplyBundleList, int minSupplyPrice, int maxSupplyPrice, int typeIndex)
         {
             {
                 foreach (int quantity in bundleQuantities)

@@ -21,7 +21,7 @@ namespace LemonadeStand
 
 
 
-        public object Customers { get; internal set; }
+        public object Customers { get; private set; }
 
 
         internal void StartDay()

@@ -14,7 +14,7 @@ namespace LemonadeStand
         public double customerCash;
         public int thirst;
         private Random random = new Random();
-        int temp;
+        private int temp;
         
 
 
