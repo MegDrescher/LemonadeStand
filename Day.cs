@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    internal class Day
+    public class Day 
     {
         public int dayNumber;
         public double lemondadePrice;
@@ -24,19 +24,19 @@ namespace LemonadeStand
         public object Customers { get; private set; }
 
 
-        internal void StartDay()
+        public void StartDay()
         {
-            throw new NotImplementedException();
+            
         }
 
-        internal void CustomerTransactions(Inventory inventory, Player player)
+        public void CustomerTransactions(Inventory inventory, Player player)
         {
-            throw new NotImplementedException();
+            
         }
 
-        internal void SetUpDay(int index)
+        public void SetUpDay(int index)
         {
-            throw new NotImplementedException();
+           
         }
 
 

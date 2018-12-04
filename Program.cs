@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    internal class Program
+    public class Program
     {
         private static void Main(string[] args)
         {
-            
-            //Game game = new Game();
-            //game.StartGame();
+            Game game = new Game();
+            game.RunGame();
         }
+
     }
-}
+                    
+ }

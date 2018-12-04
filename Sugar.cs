@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Sugar : Inventory
+    public class Sugar
+    {    
+    public static double price;
+    public Sugar()
     {
+     price = 1.00;
+    }
+    static Sugar()
+     {
+      price = 1.00;
+     }
+
     }
 }

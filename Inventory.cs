@@ -8,36 +8,37 @@ namespace LemonadeStand
 {
     public class Inventory
     {
-        //member variables
-        public int quantity;
-        public double price;
-        public string typeOfSupply;
-        public List<Supply> lemons;
-        public List<Supply> cupsOfSugar;
-        public List<Supply> iceCubes;
-        public List<Supply> paperCups;
+        ////member variables
+        //public int quantity;
+        //public double price;
+        //public string typeOfSupply;
+        
+      
+        public List<Lemons> lemon;
+        public List<PaperCups> paperCups;
+        public List<Sugar> sugar;
+        public List<Ice> ice;
 
 
 
-
-
-        //constructor
+      
         public Inventory()
         {
+            lemon = new List<Lemons>();
+            paperCups = new List<PaperCups>();
+            ice = new List<Ice>();
+            sugar = new List<Sugar>();
 
         }
-        //public Inventory(int quantity, double price, string typeOfSupply)
-        //{
-        //    this.quantity = quantity;
-        //    this.price = price;
-        //    this.typeOfSupply = typeOfSupply;
-        //}
+       
 
     }
 
-    public class Supply
-    {
+   
 
-    }
-
-}
+} //public Inventory(int quantity, double price, string typeOfSupply)
+  //{
+  //    this.quantity = quantity;
+  //    this.price = price;
+  //    this.typeOfSupply = typeOfSupply;
+  //}

@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Cups : Inventory
+    public class Wallet
     {
+        public double cash;
+
+        public Wallet()
+        {
+            cash = 20;
+        }
     }
 }
+
+   
