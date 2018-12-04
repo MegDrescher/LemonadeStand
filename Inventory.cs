@@ -15,19 +15,23 @@ namespace LemonadeStand
         public List<Supply> lemons;
         public List<Supply> cupsOfSugar;
         public List<Supply> iceCubes;
-        //public List<> cup
+        public List<Supply> paperCups;
 
-        public Inventory() //open close principle 
-        {
-        }
+
+
+
 
         //constructor
-        public Inventory(int quantity, double price, string typeOfSupply)
+        public Inventory()
         {
-            this.quantity = quantity;
-            this.price = price;
-            this.typeOfSupply = typeOfSupply;
+
         }
+        //public Inventory(int quantity, double price, string typeOfSupply)
+        //{
+        //    this.quantity = quantity;
+        //    this.price = price;
+        //    this.typeOfSupply = typeOfSupply;
+        //}
 
     }
 

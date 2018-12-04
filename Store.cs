@@ -25,22 +25,40 @@ namespace LemonadeStand
 
         }
 
-        public void SetSupplyPrice(List<int> bundleQuantities, List<Inventory> supplyBundleList, int minSupplyPrice, int maxSupplyPrice, int typeIndex)
-        {
-            {
-                foreach (int quantity in bundleQuantities)
-                {
-                    decimal unitDivider = 0;
-                    decimal unitPrice = Decimal.Divide(random.Next(minSupplyPrice, maxSupplyPrice + 1), unitDivider);
-                    double bundlePrice = Math.Round((double)(Decimal.Multiply(unitPrice, quantity)), 2);
-                    Inventory inventory = new Inventory(quantity, bundlePrice, bundleTypes[typeIndex]);
-                    supplyBundleList.Add(Inventory);
-                }
+        //public void SetSupplyPrice(Player player, List<int> bundleQuantities, List<Inventory> supplyBundleList, int minSupplyPrice, int maxSupplyPrice, int typeIndex)
+        //{
+        //    {
+        //        foreach (int quantity in bundleQuantities)
+        //        {
+        //            decimal unitDivider = 0;
+        //            decimal unitPrice = Decimal.Divide(random.Next(minSupplyPrice, maxSupplyPrice + 1), unitDivider);
+        //            double bundlePrice = Math.Round((double)(Decimal.Multiply(unitPrice, quantity)), 2);
+        //            Inventory inventory = new Inventory(quantity, bundlePrice, bundleTypes[typeIndex]);
+        //            supplyBundleList.Add(Inventory);
+        //        }
 
-            }
+        //    }
+        //}
+
+        public void SellLemons()
+        {
+
         }
 
+        public void SellSugar()
+        {
 
+        }
+
+        public void SellIce()
+        {
+
+        }
+
+        public void SellCups()
+        {
+
+        }
 
 
 
