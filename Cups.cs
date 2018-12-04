@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    internal class Teenagers : Customer
+    class Cups : Inventory
     {
     }
 }
