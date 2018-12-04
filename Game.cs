@@ -45,7 +45,7 @@ namespace LemonadeStand
         public Game()
         {
             Random random = new Random();
-           
+            
             //store = new Store(random); 
             temperatureMultiplier =
             forecastMultiplier = 

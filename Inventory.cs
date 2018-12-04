@@ -15,8 +15,9 @@ namespace LemonadeStand
         public List<Supply> lemons;
         public List<Supply> cupsOfSugar;
         public List<Supply> iceCubes;
+        //public List<> cup
 
-        public Inventory()
+        public Inventory() //open close principle 
         {
         }
 
