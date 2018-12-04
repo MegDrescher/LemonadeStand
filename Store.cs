@@ -59,7 +59,7 @@ namespace LemonadeStand
                     player.wallet.cash -= Sugar.price;
                 }
             }
-            Console.WriteLine($"You now have {player.inventory.sugar.Count} sugar, and your wallet balance is ${player.wallet.cash}");
+            Console.WriteLine($"You now have {player.inventory.sugar.Count} cups of sugar, and your wallet balance is ${player.wallet.cash}");
         }
 
         private void SellIce(Player player, int amountOfIce)
@@ -73,7 +73,7 @@ namespace LemonadeStand
                     player.wallet.cash -= Ice.price;     
                 }
             }
-            Console.WriteLine($"You now have{player.inventory.ice.Count} ice, and your wallet balance is ${player.wallet.cash}");
+            Console.WriteLine($"You now have{player.inventory.ice.Count}  bags of ice, and your wallet balance is ${player.wallet.cash}");
         }
         public void RunStoreLogic(Player player)
         {
@@ -81,9 +81,9 @@ namespace LemonadeStand
             SellLemons(player, numberOfLemons);
             int numberOfCups = AskHowManyItems("paper cups");
             SellCups(player, numberOfCups);
-            int amountOfSugar = AskHowManyItems("sugar");
+            int amountOfSugar = AskHowManyItems("cups of sugar");
             SellSugar(player, amountOfSugar);
-            int numberOfIce = AskHowManyItems("ice");
+            int numberOfIce = AskHowManyItems("bags of ice");
             SellIce(player, numberOfIce);
 
         }

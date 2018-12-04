@@ -15,8 +15,10 @@ namespace LemonadeStand
        
         private Random random = new Random();
         private int dayNumber = 1;
-        private int daysInGame;
-        private int day;
+        private readonly int totalDaysInGame;
+        public int day;
+        private List<Day> days;
+        Random rnd = new Random();
 
         public int minTemperature;
         public int maxTemperature;
@@ -48,6 +50,18 @@ namespace LemonadeStand
             Random random = new Random();
             player = new Player();
             store = new Store();
+            totalDaysInGame = 7;
+            days = new List<Day>()
+            {
+                new Day(rnd) {Name = "Monday", Number = 1, weather =new Weather(rnd), report = new Report(player)},
+                new Day(rnd) {Name = "Tuesday", Number = 2, weather =new Weather(rnd), report = new Report(player)},
+                new Day(rnd) {Name = "Wednesday", Number = 3, weather =new Weather(rnd), report = new Report(player)},
+                new Day(rnd) {Name = "Thursday", Number = 4, weather =new Weather(rnd), report = new Report(player)},
+                new Day(rnd) {Name = "Friday", Number = 5, weather =new Weather(rnd), report = new Report(player)},
+                new Day(rnd) {Name = "Saturday", Number = 6, weather =new Weather(rnd), report = new Report(player)},
+                new Day(rnd) {Name = "Sunday", Number = 7, weather =new Weather(rnd), report = new Report(player)},
+
+            };
         }
 
         public void RunGame()

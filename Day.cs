@@ -15,29 +15,29 @@ namespace LemonadeStand
         public int number;
         public Weather weather;
         public List<Customer> customers;
-        public Random random;
+        Random rnd = new Random();
         public int customersToday;
-       
+        public int Number;
+        public string Name;
 
-
+        public Day(Random rnd)
+        {
+            this.rnd = rnd;
+        }
 
         public object Customers { get; private set; }
-
+        public Report report { get; internal set; }
 
         public void StartDay()
         {
             
+
+
         }
 
-        public void CustomerTransactions(Inventory inventory, Player player)
-        {
-            
-        }
+    
 
-        public void SetUpDay(int index)
-        {
-           
-        }
+    
 
 
 
