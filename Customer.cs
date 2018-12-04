@@ -12,15 +12,13 @@ namespace LemonadeStand
         private int cupsPurchased;
         private int cupsLeftover;
         public double customerCash;
-        public int thirst;
         private Random random = new Random();
         private int temp;
-        
+        //list of customers
 
 
     }
+   
     
-       
-
     
 }
