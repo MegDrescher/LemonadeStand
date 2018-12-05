@@ -16,10 +16,10 @@ namespace LemonadeStand
         public Wallet wallet;
         public double startMoneyAmount;
         public double moneyAvailable;
-        public double dailyProfit;
-        public double dailyExpense;
-        public double totalExpense;
-        public double totalProfit;
+        //public double dailyProfit;
+        //public double dailyExpense;
+        //public double totalExpense;
+        //public double totalProfit;
         public Random random;
         public bool notEnoughLemons;
         public bool notEnoughSugar;

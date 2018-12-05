@@ -8,15 +8,25 @@ namespace LemonadeStand
 {
     public class Customer
     {
-        public string name;
-        private int cupsPurchased;
-        private int cupsLeftover;
+        public string name;      
         public double customerCash;
-        private Random random = new Random();
-        private int temp;
-        //list of customers
+        public Store store;
+        public readonly Random random = new Random();
+        public readonly Day day = new Day();
+        public  int temperature;
+
+        public Customer(Random random, Day day)
+        {
+            this.random = random;
+            this.day = day;
 
 
+        }
+
+        public Customer(Store store)
+        {
+            this.store = store;
+        }
     }
    
     

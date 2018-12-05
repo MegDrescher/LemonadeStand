@@ -38,8 +38,9 @@
             {
                 cashMadeTodayRounded = value;
             }
+            
         }
-        
+       
         public float TotalCupsSold
         {
             get

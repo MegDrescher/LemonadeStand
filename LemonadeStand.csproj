@@ -62,6 +62,7 @@
     <Compile Include="Ice.cs" />
     <Compile Include="Lemons.cs" />
     <Compile Include="Neighbors.cs" />
+    <Compile Include="Report.cs" />
     <Compile Include="Sugar.cs" />
     <Compile Include="Teenagers.cs" />
     <Compile Include="Store.cs" />

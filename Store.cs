@@ -14,14 +14,14 @@ namespace LemonadeStand
                            
         }
 
-        private int AskHowManyItems(string item)
+        public int AskHowManyItems(string item)
         {
             Console.WriteLine($"How many {item} do you want to purchase?");
             int numberOfItems = int.Parse(Console.ReadLine());
             return numberOfItems;
         }
 
-        private void SellLemons(Player player, int numberOfLemons)
+        public void SellLemons(Player player, int numberOfLemons)
         {
             if (player.wallet.cash >= Lemons.price * numberOfLemons)
             {
@@ -62,7 +62,7 @@ namespace LemonadeStand
             Console.WriteLine($"You now have {player.inventory.sugar.Count} cups of sugar, and your wallet balance is ${player.wallet.cash}");
         }
 
-        private void SellIce(Player player, int amountOfIce)
+        public void SellIce(Player player, int amountOfIce)
         {
             if (player.wallet.cash >= Ice.price * amountOfIce)
             {
@@ -74,6 +74,7 @@ namespace LemonadeStand
                 }
             }
             Console.WriteLine($"You now have{player.inventory.ice.Count}  bags of ice, and your wallet balance is ${player.wallet.cash}");
+            Console.WriteLine();
         }
         public void RunStoreLogic(Player player)
         {

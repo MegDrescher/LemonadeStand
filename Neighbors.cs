@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Neighbors : Customer
+    public class Neighbors : Customer
     {
+        public Neighbors(Store store) : base(store)
+        {
+            this.store = store;
+        }
     }
 }

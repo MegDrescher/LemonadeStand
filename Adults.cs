@@ -8,9 +8,14 @@ namespace LemonadeStand
 {
     public class Adults : Customer
     {
+        public Adults(Store store) : base(store)
+        {
+            this.store = store;
 
+
+        }
     }
 
-   
     
+
 }

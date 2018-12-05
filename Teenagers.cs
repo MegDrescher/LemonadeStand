@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    internal class Teenagers : Customer
+    public class Teenagers : Customer
     {
+        public Teenagers(Store store) : base(store)
+        {
+            this.store = store;
+        }
+
     }
+
+    //    public void Teenagers(Random random, Day day)
+    //    {
+
+    //    }
+    //
 }

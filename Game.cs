@@ -8,23 +8,23 @@ namespace LemonadeStand
 {
     public class Game
     {
-        Player player;
-        Store store;
-        
+        private readonly Player player;
+        private readonly Store store;
 
-       
-        private Random random = new Random();
-        private int dayNumber = 1;
+
+
+        private readonly Random random = new Random();
+        private readonly int dayNumber = 1;
         private readonly int totalDaysInGame;
         public int day;
-        private List<Day> days;
-        Random rnd = new Random();
+        private readonly List<Day> days;
+        private readonly Random rnd = new Random();
 
         public int minTemperature;
         public int maxTemperature;
-        private int cupsPerPitcher;
-        private int forecastMultiplier;
-        private int temperatureMultiplier;
+        private readonly int cupsPerPitcher;
+        private readonly int forecastMultiplier;
+        private readonly int temperatureMultiplier;
         public int priceMultiplier;
 
         public int minIcePerCup { get; private set; }
@@ -32,10 +32,10 @@ namespace LemonadeStand
         public int minLemonadePricePerCup { get; private set; }
         public int maxLemonadePricePerCup { get; private set; }
 
-        private int minSugarPerCup;
-        private int maxSugarPerCup;
-        private int minLemonsPerPitcher;
-        private int maxLemonsPerPitcher;
+        private readonly int minSugarPerCup;
+        private readonly int maxSugarPerCup;
+        private readonly int minLemonsPerPitcher;
+        private readonly int maxLemonsPerPitcher;
 
 
         //public int minSugarPricePerCup { get; private set; }
@@ -50,24 +50,20 @@ namespace LemonadeStand
             Random random = new Random();
             player = new Player();
             store = new Store();
-            totalDaysInGame = 7;
-            days = new List<Day>()
-            {
-                new Day(rnd) {Name = "Monday", Number = 1, weather =new Weather(rnd), report = new Report(player)},
-                new Day(rnd) {Name = "Tuesday", Number = 2, weather =new Weather(rnd), report = new Report(player)},
-                new Day(rnd) {Name = "Wednesday", Number = 3, weather =new Weather(rnd), report = new Report(player)},
-                new Day(rnd) {Name = "Thursday", Number = 4, weather =new Weather(rnd), report = new Report(player)},
-                new Day(rnd) {Name = "Friday", Number = 5, weather =new Weather(rnd), report = new Report(player)},
-                new Day(rnd) {Name = "Saturday", Number = 6, weather =new Weather(rnd), report = new Report(player)},
-                new Day(rnd) {Name = "Sunday", Number = 7, weather =new Weather(rnd), report = new Report(player)},
-
-            };
+            day = new List<Day>();
+            int numberOfDaysToPlay = 7;
         }
 
-        public void RunGame()
+
+    }
+
+    private void RunGame(Player player, Day day)
+    {
         {
-            store.RunStoreLogic(player);
+                Store.RunStoreLogic(player);
         }
-    } 
+    }
 
 }
+    
+

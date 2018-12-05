@@ -8,7 +8,11 @@ namespace LemonadeStand
 {
     public class Children : Customer
     {
+        public Children(Store store): base(store)
+        {
 
+        }
     }
-  
+
+    
 }
